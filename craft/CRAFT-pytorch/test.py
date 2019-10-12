@@ -49,7 +49,7 @@ def str2bool(v):
 parser = argparse.ArgumentParser(description='CRAFT Text Detection')
 parser.add_argument('--trained_model', default='craft_mlt_25k.pth',
                     type=str, help='pretrained model')
-parser.add_argument('--text_threshold', default=0.7,
+parser.add_argument('--text_threshold', default=0.5,
                     type=float, help='text confidence threshold')
 parser.add_argument('--low_text', default=0.5, type=float,
                     help='text low-bound score')
